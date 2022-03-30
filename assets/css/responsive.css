@@ -165,4 +165,8 @@
   .heading__location {
     margin-left: 4px;
   }
+
+  .home-product-item-price-old {
+    display: none;
+  }
 }
