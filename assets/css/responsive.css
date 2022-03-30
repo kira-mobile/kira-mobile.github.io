@@ -143,7 +143,7 @@
   }
 
   .carousel-inner img {
-    height: 269px;
+    height: 200px;
   }
   /* footer */
   .footer-text {
@@ -156,5 +156,13 @@
 
   .c-o-1 {
     margin-left: 8.33333% !important;
+  }
+
+  .container-product-guarantee__heading-text {
+    font-size: 1.4rem;
+  }
+
+  .heading__location {
+    margin-left: 4px;
   }
 }
