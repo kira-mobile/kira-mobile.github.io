@@ -1964,11 +1964,11 @@
                     </li>
 
                     <li class="header-mobile-nav__item pd-none">
-                        <a href="./login-form.html" class="header-mobile-nav__item-link js-login">Đăng nhập</a>
+                        <a href="./login-form.html" class="header-mobile-nav__item-link">Đăng nhập</a>
                     </li>
 
                     <li class="header-mobile-nav__item pd-none">
-                        <a href="./regist-form.html" class="header-mobile-nav__item-link js-regist">Đăng ký</a>
+                        <a href="./regist-form.html" class="header-mobile-nav__item-link">Đăng ký</a>
                     </li>
                 </ul>
             </nav>
@@ -5744,6 +5744,9 @@
                         <img src="https://giatien.net/upload/hinhanh/quangcao-3-2335.png" alt="Kira Mobile">
                     </a>
                 </div>
+                <a href="#" class="go-to-top active">
+                    <i class="go-to-top__icon ti-arrow-circle-up"></i>
+                </a>
                 <a class="call">
                     <i class="call__icon ti-headphone"></i>
                 </a>
@@ -5974,6 +5977,20 @@
             </ul>
         </div>
 
+
+        <script>
+            // Scroll Screen 
+            const toTop = document.querySelector(".go-to-top")
+
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 300) {
+                    toTop.classList.add("active");
+                }
+                else {
+                    toTop.classList.remove("active");
+                }
+            })
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
             </script>
