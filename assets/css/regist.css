@@ -631,6 +631,27 @@ input.checkbox:checked:after {
   margin-bottom: 2em;
 }
 
+.seen {
+  display: flex;
+  position: relative;
+  margin: 2em 0;
+}
+
+.seen-icon {
+  position: absolute;
+  right: 15px;
+  top: 30%;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.seen-icon:hover {
+  color: #ddd;
+}
+
+.hidden {
+  display: none !important;
+}
 /*-- responsive-design --*/
 @media (max-width: 1440px) {
   input[type="text"],

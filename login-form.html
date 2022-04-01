@@ -14,6 +14,7 @@
     <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
     <link rel="icon" href="./assets/img/logo.png" type="image/x-icon" />
     <!-- //web font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
@@ -24,7 +25,13 @@
             <div class="agileits-top">
                 <form action="#" method="post">
                     <input class="text email" type="email" name="email" placeholder="Email" required="">
-                    <input class="text" type="password" name="password" placeholder="Password" required="">
+                    <div class="seen">
+                        <input class="text input" type="password" name="password" placeholder="Password" required="">
+                        <div class="seen-icon">
+                            <i class="fa-solid fa-eye eye-open hidden"></i>
+                            <i class="fa-solid fa-eye-low-vision eye-close"></i>
+                        </div>
+                    </div>
                     <div class="wthree-text">
                         <div class="clear"> </div>
                     </div>
@@ -54,6 +61,24 @@
         </ul>
     </div>
     <!-- //main -->
+
+
+    <script>
+        const input = document.querySelector(".input")
+        const eyeOpen = document.querySelector(".eye-open")
+        const eyeClose = document.querySelector(".eye-close")
+        eyeOpen.addEventListener("click", function () {
+            eyeOpen.classList.add("hidden")
+            eyeClose.classList.remove("hidden")
+            input.setAttribute("type", "password")
+        })
+        eyeClose.addEventListener("click", function () {
+            eyeOpen.classList.remove("hidden")
+            eyeClose.classList.add("hidden")
+            input.setAttribute("type", "text")
+        })
+        console.log(input)
+    </script>
 </body>
 
 </html>
