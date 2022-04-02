@@ -14,6 +14,7 @@
     <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
     <link rel="icon" href="./assets/img/logo.png" type="image/x-icon" />
     <!-- //web font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 
@@ -23,26 +24,30 @@
         <h1>Creative SignUp Form</h1>
         <div class="main-agileinfo">
             <div class="agileits-top">
-                <form action="#" method="post">
-                    <input class="text" type="text" name="Username" placeholder="Username" required="">
+                <form method="post" name="myForm">
+                    <input class="text" type="text" name="username" placeholder="Username" required="">
                     <input class="text email" type="email" name="email" placeholder="Email" required="">
                     <div class="seen">
-                        <input class="text" type="password" name="password" placeholder="Password" required="">
+                        <input class="text input" type="password" name="password" placeholder="Password" required="">
+                        <div class="seen-icon">
+                            <i class="fa-solid fa-eye eye-open hidden"></i>
+                            <i class="fa-solid fa-eye-low-vision eye-close"></i>
+                        </div>
                     </div>
 
                     <div class="seen">
-                        <input class="text" type="password" name="password" placeholder="Confirm Password" required="">
+                        <input class="text" type="password" name="confirm" placeholder="Confirm Password" required="">
                     </div>
                     <div class="wthree-text">
                         <label class="anim">
-                            <input type="checkbox" class="checkbox" required="">
+                            <input type="checkbox" class="checkbox" required="" name="checkbox">
                             <span>I Agree To The Terms & Conditions</span>
                         </label>
                         <div class="clear"> </div>
                     </div>
-                    <input type="submit" value="SIGNUP">
+                    <input type="submit" value="SIGNUP" id="log-in"> 
                 </form>
-                <p>Don't have an Account? <a href="./login-form.html"> Login Now!</a></p>
+                <p>Do you have an Account? <a href="./login-form.html"> Login Now!</a></p>
             </div>
         </div>
         <!-- copyright -->
@@ -67,7 +72,37 @@
     <!-- //main -->
 
 
-    <!-- Javascript-->
+     <!-- Xem mật khẩu -->
+     <script>
+        const input = document.querySelector(".input")
+        const eyeOpen = document.querySelector(".eye-open")
+        const eyeClose = document.querySelector(".eye-close")
+        eyeOpen.addEventListener("click", function () {
+            eyeOpen.classList.add("hidden")
+            eyeClose.classList.remove("hidden")
+            input.setAttribute("type", "password")
+        })
+        eyeClose.addEventListener("click", function () {
+            eyeOpen.classList.remove("hidden")
+            eyeClose.classList.add("hidden")
+            input.setAttribute("type", "text")
+        })
+    </script>
+    
+    <!-- Check login-->
+    <script  type="text/javascript">
+        var nut = document.getElementsByTagName('input');
+        var login = document.getElementById('log-in');
+        var form = document.querySelector('form');
+        form.onsubmit = () => {return false}
+
+        login.onclick = () => {
+            if ((nut[0].value != "") && (nut[1].value != "") && (nut[2].value != "") && (nut[3].value != ""))
+            {
+                window.location.href="registed.html"
+            }
+        }
+    </script>
 </body>
 
 </html>
