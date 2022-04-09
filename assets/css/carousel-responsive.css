@@ -1,0 +1,39 @@
+/* Mobile and Tablet */
+@media (max-width: 1023px)
+{
+    .kira-body__end {
+        margin-left: 0;
+        padding-left: 30;  
+    }
+
+    .kira-body__end__items {
+        text-align: justify;
+        font-size: 1.6rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px)
+{
+
+}
+
+ /* Mobile  */
+@media (max-width: 739px)       
+{
+    .kira-col__tittle {
+        font-size: 2.4rem;
+    }
+
+    .kira-poster {
+        height: 200px;
+    }
+
+    .poster-product {
+        width: 100%;
+    }
+
+    .footer-text {
+        margin-bottom: 0;
+    }
+}

@@ -1,5 +1,5 @@
 .main {
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   /* Header */
   .header {
@@ -141,8 +141,8 @@
   }
   
   .header-logo__img {
-    width: 99px;
-    height: 99px;
+    width: 80px !important;
+    height: 70px !important;
     margin-right: 41px;
   }
   

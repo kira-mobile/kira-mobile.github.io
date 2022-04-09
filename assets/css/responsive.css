@@ -122,6 +122,10 @@
   :root {
     --header-height: 90px;
   }
+  
+  .main {
+    overflow: hidden;
+  }
 
   .header {
     position: fixed;
