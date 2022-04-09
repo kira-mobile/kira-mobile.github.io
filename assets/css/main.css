@@ -1303,7 +1303,7 @@
   
   .footer-nav-mobile__icon {
     font-size: 2.4rem;
-    color: #f69226;
+    color: var(--primary-color);
   }
   
   .footer-nav-mobile__title {
@@ -2746,7 +2746,7 @@
 
 .footer-nav-mobile__icon {
   font-size: 2.4rem;
-  color: #f69226;
+  color: var(--primary-color);
 }
 
 .footer-nav-mobile__title {
