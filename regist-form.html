@@ -99,9 +99,19 @@
         form.onsubmit = () => {return false}
 
         login.onclick = () => {
-            if ((nut[0].value != "") && (nut[1].value != "") && (nut[2].value != "") && (nut[3].value != ""))
+            if ((nut[0].value != "") && (nut[1].value != "") && (nut[2].value != "") && (nut[3].value != "") && (nut[2].value === nut[3].value) && (nut[2].value.length > 4))
             {
                 window.location.href="registed.html"
+            }
+
+            if (nut[2].value != nut[3].value)
+            {
+                alert('Làm ơn điền đúng mật khẩu')
+            }
+
+            if (nut[2].value.length <= 4)
+            {
+                alert('Mật khẩu phải dài hơn 4 kí tự')
             }
         }
     </script>

@@ -18,10 +18,6 @@
     min-height: var(--header-nav-min-height);
   }
   
-  .heading__item {
-    margin-top: 14px;
-  }
-  
   .heading__location {
     width: 84px;
     display: inline-block;
@@ -1445,10 +1441,8 @@
   font-size: 1.4rem;
   color: var(--text-color);
   min-height: var(--header-nav-min-height);
-}
-
-.heading__item {
-  margin-top: 14px;
+  display: flex;
+  align-items: center;
 }
 
 .heading__location {
