@@ -356,7 +356,8 @@
   }
   
   .header-sub-menu__ranking-title:hover {
-    color: #00b354c7;
+    color: var(--second-color);
+    cursor: pointer;
   }
   
   /* header-search mobile */
@@ -1781,10 +1782,6 @@
   padding: 8px;
   color: var(--primary-color);
   text-decoration: none;
-}
-
-.header-sub-menu__ranking-title:hover {
-  color: #00b354c7;
 }
 
 /* header-search mobile */
