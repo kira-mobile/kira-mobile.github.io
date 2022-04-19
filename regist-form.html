@@ -28,16 +28,25 @@
                     <input class="text" type="text" name="username" placeholder="Username" required="">
                     <input class="text email" type="email" name="email" placeholder="Email" required="">
                     <div class="seen">
-                        <input class="text input" type="password" name="password" placeholder="Password" required="">
-                        <div class="seen-icon">
-                            <i class="fa-solid fa-eye eye-open hidden"></i>
-                            <i class="fa-solid fa-eye-low-vision eye-close"></i>
+                        <div class="seen-items">
+                            <input class="text input" type="password" name="password" placeholder="Password" required="">
+                            <div class="seen-icon">
+                                <i class="fa-solid fa-eye eye-open hidden"></i>
+                                <i class="fa-solid fa-eye-low-vision eye-close"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="seen">
-                        <input class="text" type="password" name="confirm" placeholder="Confirm Password" required="">
+                        <div class="seen-items">
+                            <input class="text input" type="password" name="password" placeholder="Confirm Password" required="">
+                            <div class="seen-icon">
+                                <i class="fa-solid fa-eye eye-open hidden"></i>
+                                <i class="fa-solid fa-eye-low-vision eye-close"></i>
+                            </div>
+                        </div>
                     </div>
+                   
                     <div class="wthree-text">
                         <label class="anim">
                             <input type="checkbox" class="checkbox" required="" name="checkbox">
@@ -72,20 +81,38 @@
     <!-- //main -->
 
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <!-- Xem mật khẩu -->
      <script>
-        const input = document.querySelector(".input")
-        const eyeOpen = document.querySelector(".eye-open")
-        const eyeClose = document.querySelector(".eye-close")
-        eyeOpen.addEventListener("click", function () {
-            eyeOpen.classList.add("hidden")
-            eyeClose.classList.remove("hidden")
-            input.setAttribute("type", "password")
-        })
-        eyeClose.addEventListener("click", function () {
-            eyeOpen.classList.remove("hidden")
-            eyeClose.classList.add("hidden")
-            input.setAttribute("type", "text")
+        
+        $(document).ready(function(){
+            var input = $('.input')
+            var eyeOpen = $('.eye-open')
+            var eyeClose = $('.eye-close')
+            eyeOpen.eq(0).click(function(){
+                eyeOpen.eq(0).addClass('hidden')
+                eyeClose.eq(0).removeClass('hidden')
+                input.eq(0).attr("type", "password")
+            })
+
+            eyeClose.eq(0).click(function(){
+                eyeOpen.eq(0).removeClass('hidden')
+                eyeClose.eq(0).addClass('hidden')
+                input.eq(0).attr("type", "text")
+            })
+
+            eyeOpen.eq(1).click(function(){
+                eyeOpen.eq(1).addClass('hidden')
+                eyeClose.eq(1).removeClass('hidden')
+                input.eq(1).attr("type", "password")
+            })
+
+            eyeClose.eq(1).click(function(){
+                eyeOpen.eq(1).removeClass('hidden')
+                eyeClose.eq(1).addClass('hidden')
+                input.eq(1).attr("type", "text")
+            })
         })
     </script>
     
@@ -104,15 +131,16 @@
                 window.location.href="registed.html"
             }
 
-            if (nut[2].value != nut[3].value)
+            if (nut[2].value.length <= 4 && nut[2].value !== "")
             {
-                alert('Làm ơn điền đúng mật khẩu')
+                alert('Password must be longer than 4 characters')
             }
 
-            if (nut[2].value.length <= 4)
+            if (nut[2].value != nut[3].value)
             {
-                alert('Mật khẩu phải dài hơn 4 kí tự')
+                alert('Please enter the correct password')
             }
+           
         }
     </script>
 </body>

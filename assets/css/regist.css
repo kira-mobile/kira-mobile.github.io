@@ -632,15 +632,18 @@ input.checkbox:checked:after {
 }
 
 .seen {
-  display: flex;
-  position: relative;
+  /* display: flex; */
   margin: 2em 0;
+}
+
+.seen-items {
+  position: relative;
 }
 
 .seen-icon {
   position: absolute;
   right: 15px;
-  top: 30%;
+  top: 28%;
   cursor: pointer;
   color: #ccc;
 }

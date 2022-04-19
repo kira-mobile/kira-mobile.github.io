@@ -24,13 +24,17 @@
         <div class="main-agileinfo">
             <div class="agileits-top">
                 <form  method="post">
-                    <input class="text email" type="text" name="username" placeholder="Email" required="">
-                    <!-- <input type="password" name="" id="" required="" placeholder="Confirm pass"> -->
+                    <div class="email">
+                        <input class="text email" type="text" name="username" placeholder="Email" required="">
+                    </div>
+                  
                     <div class="seen">
-                        <input class="text input" type="password" name="password" placeholder="Password" required="">
-                        <div class="seen-icon">
-                            <i class="fa-solid fa-eye eye-open hidden"></i>
-                            <i class="fa-solid fa-eye-low-vision eye-close"></i>
+                        <div class="seen-items">
+                            <input class="text input" type="password" name="password" placeholder="Password" required="">
+                            <div class="seen-icon">
+                                <i class="fa-solid fa-eye eye-open hidden"></i>
+                                <i class="fa-solid fa-eye-low-vision eye-close"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="wthree-text">
@@ -90,6 +94,7 @@
     }
 
     var nut = document.getElementsByTagName('input');
+    var err = document.getElementsByClassName('err');
     var login = document.getElementById('log-in');
     var form = document.querySelector('form');
     form.onsubmit = () => {return false}
@@ -104,28 +109,11 @@
             }
             else 
             {
-                if((nut[0].value != sessionStorage.getItem("username")))
+                if((nut[0].value != sessionStorage.getItem("username")) || (nut[1].value != sessionStorage.getItem("password")))
                    {
-                        alert("Email không chính xác")
-                   }
-
-                if((nut[1].value != sessionStorage.getItem("password")))
-                   {
-                        alert("Password không chính xác")
+                        alert('Invalid login, please try agian!')
                    }
             }
-        }
-
-        else {
-                if ((nut[0].value == ""))
-                {
-                     alert("Email còn để trống")
-                }
-
-                if ((nut[1].value == ""))
-                {
-                     alert("Password còn để trống")
-                }
         }
     }
 </script>
