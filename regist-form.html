@@ -15,7 +15,6 @@
     <link rel="icon" href="./assets/img/logo.png" type="image/x-icon" />
     <!-- //web font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 
 <body>
@@ -83,66 +82,7 @@
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     <!-- Xem mật khẩu -->
-     <script>
-        
-        $(document).ready(function(){
-            var input = $('.input')
-            var eyeOpen = $('.eye-open')
-            var eyeClose = $('.eye-close')
-            eyeOpen.eq(0).click(function(){
-                eyeOpen.eq(0).addClass('hidden')
-                eyeClose.eq(0).removeClass('hidden')
-                input.eq(0).attr("type", "password")
-            })
-
-            eyeClose.eq(0).click(function(){
-                eyeOpen.eq(0).removeClass('hidden')
-                eyeClose.eq(0).addClass('hidden')
-                input.eq(0).attr("type", "text")
-            })
-
-            eyeOpen.eq(1).click(function(){
-                eyeOpen.eq(1).addClass('hidden')
-                eyeClose.eq(1).removeClass('hidden')
-                input.eq(1).attr("type", "password")
-            })
-
-            eyeClose.eq(1).click(function(){
-                eyeOpen.eq(1).removeClass('hidden')
-                eyeClose.eq(1).addClass('hidden')
-                input.eq(1).attr("type", "text")
-            })
-        })
-    </script>
-    
-    <!-- Check login-->
-
-    <!-- Javascript-->
-    <script  type="text/javascript">
-        var nut = document.getElementsByTagName('input');
-        var login = document.getElementById('log-in');
-        var form = document.querySelector('form');
-        form.onsubmit = () => {return false}
-
-        login.onclick = () => {
-            if ((nut[0].value != "") && (nut[1].value != "") && (nut[2].value != "") && (nut[3].value != "") && (nut[2].value === nut[3].value) && (nut[2].value.length > 4))
-            {
-                window.location.href="registed.html"
-            }
-
-            if (nut[2].value.length <= 4 && nut[2].value !== "")
-            {
-                alert('Password must be longer than 4 characters')
-            }
-
-            if (nut[2].value != nut[3].value)
-            {
-                alert('Please enter the correct password')
-            }
-           
-        }
-    </script>
+    <script src="/assets/js/regist.js"></script>
 </body>
 
 </html>
