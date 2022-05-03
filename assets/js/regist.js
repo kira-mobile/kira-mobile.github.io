@@ -54,7 +54,7 @@ $(document).ready(function () {
       }
       
     //   Check login
-      if (input.eq(2).val() != input.eq(3).val() && input.eq(3).val() != "" )
+      if (input.eq(2).val() != input.eq(3).val() && input.eq(3).val() != "" && input.eq(2).val().length >= 4 )
       {
           alert('Please enter the correct password')
       }
