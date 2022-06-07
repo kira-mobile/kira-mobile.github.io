@@ -36,4 +36,8 @@
     .footer-text {
         margin-bottom: 0;
     }
+
+    .poster {
+        height: 290px;
+    }
 }
