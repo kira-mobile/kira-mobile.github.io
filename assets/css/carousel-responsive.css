@@ -15,7 +15,14 @@
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px)
 {
+    .poster {
+        margin: 8% 5.7%;
+    }
 
+    .poster-text {
+        font-size: 2rem;
+        margin-top: 75%;
+    }
 }
 
  /* Mobile  */
@@ -39,5 +46,11 @@
 
     .poster {
         height: 290px;
+        margin: 8% 4.4%;
+    }
+
+    .poster-text {
+        font-size: 1.4rem;
+        margin-top: 88%;
     }
 }
