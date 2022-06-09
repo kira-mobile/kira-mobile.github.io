@@ -9,10 +9,13 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
+
+
 //Add to cart
 var dem = 0;
 $(document).on("click", ".container-product__item-sale-icon", function (e) {
-  e.preventDefault();
+  //e.preventDefault();
 
   // Nếu click vào 1 sản phẩm thì các sp khác ko được click
   if ($(this).hasClass("disable")) {
@@ -91,7 +94,7 @@ function addCart(name, src, price) {
     name +
     '</span><span class="header__noti-descriotion">' +
     price +
-    '</span><i class="fa-solid fa-trash-can header__noti-icon"></i></div></a></tr>';
+    '</span></div></a><div class="sale-closing"><button class="pay btn btn-primary">Thanh Toán</button><i class="fa-solid fa-trash-can header__noti-icon"></i></div></tr>';
   addTr.innerHTML = trContent;
   var trContent = price;
   var cartTb = document.querySelector("tbody");
@@ -123,3 +126,14 @@ $(document).on("click", ".header__noti-icon", function (e) {
     $(".have-product").addClass("display-none");
   }
 });
+
+// Click vào giỏ hàng hiện lên menu cart
+const cartClose = document.querySelector('.cart-close')
+const cartShow = document.querySelector('.ti-shopping-cart')
+cartShow.addEventListener('click', function(){
+  document.querySelector('.sub-product').style.transform="translateX(0)"
+})
+
+cartClose.addEventListener('click', function(){
+  document.querySelector('.sub-product').style.transform="translateX(100%)"
+})

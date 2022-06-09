@@ -1226,19 +1226,25 @@
                                 </div>
                             </li>
 
-                            <li class="header-menu__item">
-                                <a href="" class="header-menu__item-link">
-                                    <i class="header-menu__item-icon ti-shopping-cart"></i>
-                                    <p class="header-menu__item-name">Giỏ Hàng</p>
-                                </a>
-
+                        </ul>
+                        <li class="header-menu__item display-on-mobile-and-tablet menu-cart">
+                            <a href="#" class="header-menu__item-link">
+                                <i class="header-menu__item-icon ti-shopping-cart"></i>
+                                <p class="header-menu__item-name hide-on-mobile-and-tablet">Giỏ Hàng</p>
+                            </a>
+                            <!-- product -->
+                            <div class="sub-product">
+                                <div class="cart-heading">
+                                    <span class="cart-title">Cart</span>
+                                    <i class="fa-solid fa-xmark cart-close"></i>
+                                </div>
                                 <!-- No product -->
-                                <div class="header-sub-menu no-product">
+                                <div class=" no-product">
                                     <div class="grid">
-                                        <div class="row-grid">
-                                            <div class="col-grid l-9 m-9" style="text-align: center;">
+                                        <div class="row-grid header-sub-menu-content">
+                                            <div class="col-grid l-12 m-9" style="text-align: center;">
                                                 <h3 class="header-sub-menu__title">Chưa có sản phẩm</h3>
-                                                <img src="./assets/img/no-cart.png" alt="" class="header-sub-menu__img">
+                                                <img src="https://img.freepik.com/free-vector/online-shopping-banner-with-3d-shopping-cart-clouds-social-icons-vector-illustration_548887-100.jpg?t=st=1654765835~exp=1654766435~hmac=6579117d7d8983673be5ac342c8cb99451a3f01737dbbf8c90bdc322efb4e45b&w=740" alt="" class="header-sub-menu__img">
                                                 <div class="row-grid">
                                                 </div>
                                             </div>
@@ -1247,8 +1253,8 @@
                                 </div>
 
                                 <!-- Have product -->
-                                <div class="header-sub-menu display-none have-product">
-                                    <table>
+                                <div class=" display-none have-product">
+                                    <table class="table-sp">
                                         <tbody class="grid">
                                             <!-- <tr class="header__noti-item header__noti-item--viewed">
                                                 <a href="" class="header__noti-link">
@@ -1257,19 +1263,23 @@
                                                         <span class="header__noti-name">Giày bóng đá Thiên Ân chính hãng</span>
                                                         <span class="header__noti-descriotion">Mô tả giày bóng đá Thiên Ân
                                                             chính
-                                                            hãng</span>
-                                                            <i class="fa-solid fa-trash-can header__noti-icon"></i>
+                                                            hãng
+                                                        </span>
                                                     </div>
-                                                </a>
-                                                
+                                                    </a>
+                                                    <div class="sale-closing">
+                                                        <button class="pay btn btn-primary">Thanh Toán</button>
+                                                        <i class="fa-solid fa-trash-can header__noti-icon"></i>
+                                                    </div>
                                             </tr> -->
                                         </tbody>
                                     </table>
                                     <span class="delete-all">Xóa tất cả</span>
                                 </div>
+                            </div>
+                            
 
-                            </li>
-                        </ul>
+                        </li>
 
                         <!-- Button search in mobile -->
                         <label for="mobile-menu-checkbox" class="header-mobile-search display-on-mobile-and-tablet">
@@ -1285,13 +1295,13 @@
                             </button>
                         </div>
 
-                        <label class="header-mobile-search display-on-mobile-and-tablet">
+                        <!-- <label class="header-mobile-search display-on-mobile-and-tablet">
                             <i class="header-mobile-search__icon ti-shopping-cart"></i>
                             <div class="cart-sub">
                                 <h3 class="header-sub-menu__title no-border">Chưa có sản phẩm</h3>
                                 <img src="./assets/img/no-cart.png" alt="" class="header-sub-menu__img">
                             </div>
-                        </label>
+                        </label> -->
                     </div>
                 </div>
             </div>
