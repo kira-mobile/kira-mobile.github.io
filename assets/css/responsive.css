@@ -92,6 +92,14 @@
   .no-top {
     margin-top: 0 !important;
   }
+
+  .wrapper {
+    bottom: 34%;
+  }
+
+  .wrapper-2 {
+    bottom: 44%;
+  }
 }
 
 /* Mobile */
@@ -158,6 +166,18 @@
 
   .delete-all {
     margin-left: 6%;
+  }
+
+  .wrapper {
+    bottom: 16%;
+  }
+
+  .wrapper-2 {
+    bottom: 30%;
+  }
+
+  .coccoc-alo-phone {
+    width: 100px;
   }
   /* footer */
   .footer-text {
