@@ -16,7 +16,7 @@ window.addEventListener("scroll", () => {
 var dem = 0;
 $(document).on("click", ".container-product__item-sale-icon", function (e) {
   //e.preventDefault();
-
+  
   // Nếu click vào 1 sản phẩm thì các sp khác ko được click
   if ($(this).hasClass("disable")) {
     return false;
@@ -129,11 +129,23 @@ $(document).on("click", ".header__noti-icon", function (e) {
 
 // Click vào giỏ hàng hiện lên menu cart
 const cartClose = document.querySelector('.cart-close')
-const cartShow = document.querySelector('.ti-shopping-cart')
+const cartShow = document.querySelector('.ti-shopping-cart') 
+//Show
 cartShow.addEventListener('click', function(){
+  if(screen.width >= 1024)
+  {
+    $('.overlay-product').css('display', 'block')
+  }
   document.querySelector('.sub-product').style.transform="translateX(0)"
 })
 
+//Close
 cartClose.addEventListener('click', function(){
+  $('.overlay-product').css('display', 'none')
+  document.querySelector('.sub-product').style.transform="translateX(100%)"
+})
+
+$('.overlay-product').click(function(){
+  $('.overlay-product').css('display', 'none')
   document.querySelector('.sub-product').style.transform="translateX(100%)"
 })
