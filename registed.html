@@ -1241,19 +1241,26 @@
                                 </div>
                             </li>
 
-                            <li class="header-menu__item">
-                                <a href="" class="header-menu__item-link">
-                                    <i class="header-menu__item-icon ti-shopping-cart"></i>
-                                    <p class="header-menu__item-name">Giỏ Hàng</p>
-                                </a>
-
+                        </ul>
+                        <li class="header-menu__item display-on-mobile-and-tablet menu-cart">
+                            <a href="#" class="header-menu__item-link">
+                                <i class="header-menu__item-icon ti-shopping-cart"></i>
+                                <p class="header-menu__item-name hide-on-mobile-and-tablet">Giỏ Hàng</p>
+                            </a>
+                            <!-- product -->
+                            <div class="overlay-product hide-on-mobile-and-tablet"></div>
+                            <div class="sub-product">
+                                <div class="cart-heading">
+                                    <span class="cart-title">Cart</span>
+                                    <i class="fa-solid fa-xmark cart-close"></i>
+                                </div>
                                 <!-- No product -->
-                                <div class="header-sub-menu no-product">
+                                <div class=" no-product">
                                     <div class="grid">
-                                        <div class="row-grid">
-                                            <div class="col-grid l-9 m-9" style="text-align: center;">
+                                        <div class="row-grid header-sub-menu-content">
+                                            <div class="col-grid l-12 m-9" style="text-align: center;">
                                                 <h3 class="header-sub-menu__title">Chưa có sản phẩm</h3>
-                                                <img src="./assets/img/no-cart.png" alt="" class="header-sub-menu__img">
+                                                <img src="https://img.freepik.com/free-vector/online-shopping-banner-with-3d-shopping-cart-clouds-social-icons-vector-illustration_548887-100.jpg?t=st=1654765835~exp=1654766435~hmac=6579117d7d8983673be5ac342c8cb99451a3f01737dbbf8c90bdc322efb4e45b&w=740" alt="" class="header-sub-menu__img">
                                                 <div class="row-grid">
                                                 </div>
                                             </div>
@@ -1262,8 +1269,8 @@
                                 </div>
 
                                 <!-- Have product -->
-                                <div class="header-sub-menu display-none have-product">
-                                    <table>
+                                <div class=" display-none have-product">
+                                    <table class="table-sp">
                                         <tbody class="grid">
                                             <!-- <tr class="header__noti-item header__noti-item--viewed">
                                                 <a href="" class="header__noti-link">
@@ -1272,19 +1279,23 @@
                                                         <span class="header__noti-name">Giày bóng đá Thiên Ân chính hãng</span>
                                                         <span class="header__noti-descriotion">Mô tả giày bóng đá Thiên Ân
                                                             chính
-                                                            hãng</span>
-                                                            <i class="fa-solid fa-trash-can header__noti-icon"></i>
+                                                            hãng
+                                                        </span>
                                                     </div>
-                                                </a>
-                                                
+                                                    </a>
+                                                    <div class="sale-closing">
+                                                        <button class="pay btn btn-primary">Thanh Toán</button>
+                                                        <i class="fa-solid fa-trash-can header__noti-icon"></i>
+                                                    </div>
                                             </tr> -->
                                         </tbody>
                                     </table>
                                     <span class="delete-all">Xóa tất cả</span>
                                 </div>
+                            </div>
+                            
 
-                            </li>
-                        </ul>
+                        </li>
 
                         <!-- Button search in mobile -->
                         <label for="mobile-menu-checkbox" class="header-mobile-search display-on-mobile-and-tablet">
@@ -1299,14 +1310,6 @@
                                 <i class="header-mobile-search-box__icon ti-search"></i>
                             </button>
                         </div>
-
-                        <label class="header-mobile-search display-on-mobile-and-tablet">
-                            <i class="header-mobile-search__icon ti-shopping-cart"></i>
-                            <div class="cart-sub">
-                                <h3 class="header-sub-menu__title no-border">Chưa có sản phẩm</h3>
-                                <img src="./assets/img/no-cart.png" alt="" class="header-sub-menu__img">
-                            </div>
-                        </label>
                     </div>
                 </div>
             </div>
@@ -5787,9 +5790,33 @@
                 <a href="#" class="go-to-top active">
                     <i class="go-to-top__icon ti-arrow-circle-up"></i>
                 </a>
-                <a class="call">
-                    <i class="call__icon ti-headphone"></i>
-                </a>
+                <div class="wrapper">
+                    <div class="ring">
+                        <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+                            <div class="coccoc-alo-ph-circle"></div>
+                            <div class="coccoc-alo-ph-circle-fill"></div>
+                            <a href="tel:033-6844   -690">
+                                <div class="coccoc-alo-ph-img-circle" style="background: rgba(30, 30, 30, 0.1) url(https://drive.google.com/uc?id=1V3N2b79QjDWetC_ss9wI3c-xpWDymn9R) 
+                                no-repeat center center;background-color: #00aff2;"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper-2">
+                    <div class="ring">
+                        <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+                            <div class="coccoc-alo-ph-circle"></div>
+                            <div class="coccoc-alo-ph-circle-fill"></div>
+                            <div class="coccoc-alo-ph-img-circle" style="background: rgba(30, 30, 30, 0.1) url() 
+                            no-repeat center center;background-color: #00aff2;">
+                                <svg width="36" height="36" viewBox="0 0 36 36" style="display: flex; margin:0 auto; align-items: center; height: 100%;">
+                                    <path fill="white" d="M1 17.99C1 8.51488 8.42339 1.5 18 1.5C27.5766 1.5 35 8.51488 35 17.99C35 27.4651 27.5766 34.48 18 34.48C16.2799 34.48 14.6296 34.2528 13.079 33.8264C12.7776 33.7435 12.4571 33.767 12.171 33.8933L8.79679 35.3828C7.91415 35.7724 6.91779 35.1446 6.88821 34.1803L6.79564 31.156C6.78425 30.7836 6.61663 30.4352 6.33893 30.1868C3.03116 27.2287 1 22.9461 1 17.99ZM12.7854 14.8897L7.79161 22.8124C7.31238 23.5727 8.24695 24.4295 8.96291 23.8862L14.327 19.8152C14.6899 19.5398 15.1913 19.5384 15.5557 19.8116L19.5276 22.7905C20.7193 23.6845 22.4204 23.3706 23.2148 22.1103L28.2085 14.1875C28.6877 13.4272 27.7531 12.5704 27.0371 13.1137L21.673 17.1847C21.3102 17.4601 20.8088 17.4616 20.4444 17.1882L16.4726 14.2094C15.2807 13.3155 13.5797 13.6293 12.7854 14.8897Z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -6017,7 +6044,12 @@
             </ul>
         </div>
 
-        <!-- <img src="https://bloganchoi.com/wp-content/uploads/2019/11/rose-paris-fashion-week-2.jpeg" class="overlay-fly"> -->
+        <script>
+            // Chi tiết sản phẩm
+                var DanhSachSanPham = localStorage.getItem('') 
+
+        </script>
+      
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -6026,6 +6058,8 @@
             integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
             </script>
         <script src="/assets/js/index.js"></script>
+        <script src="/assets/js/regist.js"></script>
+        <!-- <script src="/assets/js/login.js"></script> -->
 </body>
 
 </html>

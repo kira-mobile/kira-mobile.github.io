@@ -85,6 +85,10 @@
     --header-height: 118px;
   }
 
+  .body {
+    margin-top: 6%;
+  }
+
   .cart-sub {
     width: 70%;
   }
@@ -169,11 +173,11 @@
   }
 
   .wrapper {
-    bottom: 16%;
+    bottom: 6%;
   }
 
   .wrapper-2 {
-    bottom: 30%;
+    bottom: 20%;
   }
 
   .coccoc-alo-phone {

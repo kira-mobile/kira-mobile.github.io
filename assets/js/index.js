@@ -149,3 +149,5 @@ $('.overlay-product').click(function(){
   $('.overlay-product').css('display', 'none')
   document.querySelector('.sub-product').style.transform="translateX(100%)"
 })
+
+

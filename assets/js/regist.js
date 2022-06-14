@@ -49,9 +49,13 @@ $(document).ready(function () {
       
             console.log(result);
             window.location.href="/registed.html" 
+            // var userInfo = $('.user-id')
+            // userInfo.text(result.name)
           });
          
       }
+
+     
       
     //   Check login
       if (input.eq(2).val() != input.eq(3).val() && input.eq(3).val() != "" && input.eq(2).val().length >= 4 )
